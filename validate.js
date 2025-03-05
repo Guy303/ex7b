@@ -11,7 +11,7 @@ function checkCandiNo() {
   let candi = (document.getElementById("candi").value).trim();
   if (isNaN(candi) || candi < 1) {
     return false;
-  } else {
+  } else if (isNaN(candi) || candi < 11){
     return true;
   }
 }
